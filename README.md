@@ -42,11 +42,15 @@ To summarize the entire process of the 『Parallel Clustering based News article
     2. Each cluster is regarded as a topic and then model select representative words from each cluster through the class-based TF-IDF formula.
     
   - Experimental results demonstrate that our parallel clustering is faster and more coherent in text embeddings clustering than other famous clustering methods.
+    
     ![parallel_clustering_speed](https://user-images.githubusercontent.com/105137667/195860461-c2cf8882-9f69-4fa2-9737-ca96806c1c8e.jpg)
+  
   
   ![parallel_clustering_algorithm](https://user-images.githubusercontent.com/105137667/195860786-4f008df9-ce78-4fd0-955a-b1f62b18f942.jpg)
   ![c-tf-idf](https://user-images.githubusercontent.com/105137667/195860749-3bb825e8-c16a-45db-a4fe-7b4b884d2ea6.jpg)
 
 ## 4. Topic Modeling results
+
+
 ![Topic_modeling_results](https://user-images.githubusercontent.com/105137667/195860614-edcf30d2-25af-4026-b047-677fcdcb97c2.jpg)
 
