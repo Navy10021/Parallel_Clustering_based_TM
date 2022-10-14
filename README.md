@@ -29,3 +29,24 @@ To summarize the entire process of the 『Parallel Clustering based News article
     1. TSDAE introduces noise to input sequences by deleting or swapping tokens.
     2. These damaged sentences are encoded by the transformer model into sentence embedding.
     3. Another decoder network then attempts to reconstruct the original input from the damaged sentence encoding.
+
+
+### STEP 2) Supervised trainig(NLI and STS)
+  - In order to implement high-performance text clustering and topic modeling, a language model that generates high-quality semantic embeddings is important.
+  - Accordingly, two types of supervised learning are additionally performed: Natural Language Inference (NLI) and Semantic Textual Similarity (STS), which fine-tune the vector space between similar sentences.
+  
+### STEP 3 & 4) Parallel Clustering-based Topic modeling
+  - Clustering-based topic modeling is using a clustering framework with contextualized semantic embeddings for topic modeling.
+  - We develop a simple cluster-based topic modeling focused on speed.
+    1. News article embedding apply the parallel clustering method to group semantically similar articles.
+    2. Each cluster is regarded as a topic and then model select representative words from each cluster through the class-based TF-IDF formula.
+    
+  - Experimental results demonstrate that our parallel clustering is faster and more coherent in text embeddings clustering than other famous clustering methods.
+    ![parallel_clustering_speed](https://user-images.githubusercontent.com/105137667/195860461-c2cf8882-9f69-4fa2-9737-ca96806c1c8e.jpg)
+  
+  ![parallel_clustering_algorithm](https://user-images.githubusercontent.com/105137667/195860786-4f008df9-ce78-4fd0-955a-b1f62b18f942.jpg)
+  ![c-tf-idf](https://user-images.githubusercontent.com/105137667/195860749-3bb825e8-c16a-45db-a4fe-7b4b884d2ea6.jpg)
+
+## 4. Topic Modeling results
+![Topic_modeling_results](https://user-images.githubusercontent.com/105137667/195860614-edcf30d2-25af-4026-b047-677fcdcb97c2.jpg)
+
