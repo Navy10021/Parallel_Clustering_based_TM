@@ -24,7 +24,7 @@ To summarize the entire process of the 『Parallel Clustering based News article
   ![my_lm](https://user-images.githubusercontent.com/105137667/195859373-eeebeba5-c657-4613-96f2-08b8d7479faa.jpg)
 
 
-### STEP 1) Unsupervised training(TSDAE)
+### STEP 1. Unsupervised training(TSDAE)
   
   - TSDAE consists of the following three steps:
     1. TSDAE introduces noise to input sequences by deleting or swapping tokens.
@@ -32,11 +32,11 @@ To summarize the entire process of the 『Parallel Clustering based News article
     3. Another decoder network then attempts to reconstruct the original input from the damaged sentence encoding.
 
 
-### STEP 2) Supervised trainig(NLI and STS)
+### STEP 2. Supervised trainig(NLI and STS)
   - In order to implement high-performance text clustering and topic modeling, a language model that generates high-quality semantic embeddings is important.
   - Accordingly, two types of supervised learning are additionally performed: Natural Language Inference (NLI) and Semantic Textual Similarity (STS), which fine-tune the vector space between similar sentences.
   
-### STEP 3 & 4) Parallel Clustering-based Topic modeling
+### STEP 3 - 4. Parallel Clustering-based Topic modeling
   - Clustering-based topic modeling is using a clustering framework with contextualized semantic embeddings for topic modeling.
   - We develop a simple cluster-based topic modeling focused on speed.
     1. News article embedding apply the parallel clustering method to group semantically similar articles.
@@ -52,6 +52,9 @@ To summarize the entire process of the 『Parallel Clustering based News article
 
 ## 4. Topic Modeling results
 
-
 ![Topic_modeling_results](https://user-images.githubusercontent.com/105137667/195860614-edcf30d2-25af-4026-b047-677fcdcb97c2.jpg)
 
+
+## 5. Dev
+- Seoul National University NLP Labs
+- Navy Lee
