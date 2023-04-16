@@ -1,4 +1,4 @@
-# Parallel Clustering based Topic Modeling
+# Parallel Clustering based Topic Modeling with KRNewsBERT
 #### 정부 및 국회 주관 "2022 과학기술 공공 AI 데이터 분석 활용 경진대회" AI 모델 개발 부문 1등 (최우수상) 수상작
 
 ## 1. Project Background
@@ -11,15 +11,15 @@
   - Korean NLI and STS dataset were additionally collected for fine-tuning the language model.
 
 ## 3. Overall pipeline
-To summarize the entire process of the 『Parallel Clustering based News article Topic Modeling』 we designed, it consists of the following four steps.
+To summarize the entire process of the **『Parallel Clustering based News article Topic Modeling』** we designed, it consists of the following four steps. Both Steps 1 and 2 are the process of pre-training and fine-tuning the language model to create **KRNewsBERT**.
 
-  - STEP 1) Unsupervised training(TSDAE) : The language model understands the context of a given news article and optimizes it for the domain through unsupervised learning of the TSDAE method.
+  - STEP 1) **Unsupervised training(TSDAE)** : The language model(**KRNewsBERT**) understands the context of a given news article and optimizes it for the domain through unsupervised learning of the TSDAE method.
  
-  - STEP 2) Supervised trainig(NLI and STS) : Our language model trains on the Korean NLI·STS dataset so that the model can distinguish similarities between sentences or documents.
+  - STEP 2) **Supervised trainig(NLI and STS)** : Our language model(**KRNewsBERT**) trains on the Korean NLI·STS dataset so that the model can distinguish similarities between sentences or documents.
   
-  - STEP 3) Parallel Clustering : This clustering method we designed focuses on speed and stability.
+  - STEP 3) **Parallel Clustering** : This clustering method we designed focuses on speed and stability.
   
-  - STEP 4) Keyword Extraction : Extracts important words from clustered groups using C-TF-IDF (Class-based Term Freq-Inverse Doc Freq) calculation method.
+  - STEP 4) **Keyword Extraction** : Extracts important words from clustered groups using C-TF-IDF (Class-based Term Freq-Inverse Doc Freq) calculation method.
   
   ![my_lm](https://user-images.githubusercontent.com/105137667/195859373-eeebeba5-c657-4613-96f2-08b8d7479faa.jpg)
 
@@ -42,7 +42,7 @@ To summarize the entire process of the 『Parallel Clustering based News article
     1. News article embedding apply the parallel clustering method to group semantically similar articles.
     2. Each cluster is regarded as a topic and then model select representative words from each cluster through the class-based TF-IDF formula.
     
-  - Experimental results demonstrate that our parallel clustering is faster and more coherent in text embeddings clustering than other famous clustering methods.
+  - Experimental results demonstrate that our **parallel clustering** is faster and more coherent in text embeddings clustering than other famous clustering methods.
     
     ![parallel_clustering_speed](https://user-images.githubusercontent.com/105137667/195860461-c2cf8882-9f69-4fa2-9737-ca96806c1c8e.jpg)
   
