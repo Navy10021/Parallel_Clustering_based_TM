@@ -4,7 +4,7 @@
 ## 1. Project Background
   - Topic modeling is an unsupervised learning process that automatically extracts topics or issues from a document set by analyzing the patterns of words constituting text data.
   - Cluster-based topic modeling is a methodology that combines embedding from language models with a clustering architecture.
-  - In this project, we create a topic modeling model using parallel clustering and semantic embedding.
+  - In this project, we create a **KRNewsBERT** language model and then design a **KRNewsBERT based-topic modeling model** using **parallel clustering** and **semantic embedding** techniques.
 
 ## 2. Dataset
   - The Korean National Assembly provided News articles, Twitter, and online community data related to major legislation in Korea.
@@ -13,9 +13,9 @@
 ## 3. Overall pipeline
 To summarize the entire process of the **『Parallel Clustering based News article Topic Modeling』** we designed, it consists of the following four steps. Both Steps 1 and 2 are the process of pre-training and fine-tuning the language model to create **KRNewsBERT**.
 
-  - STEP 1) **Unsupervised training(TSDAE)** : The language model(**KRNewsBERT**) understands the context of a given news article and optimizes it for the domain through unsupervised learning of the TSDAE method.
+  - STEP 1) **Unsupervised training(TSDAE)** : The language model (**KRNewsBERT**) understands the context of a given news article and optimizes it for the domain through unsupervised learning of the TSDAE method.
  
-  - STEP 2) **Supervised trainig(NLI and STS)** : Our language model(**KRNewsBERT**) trains on the Korean NLI·STS dataset so that the model can distinguish similarities between sentences or documents.
+  - STEP 2) **Supervised trainig(NLI and STS)** : Our language model (**KRNewsBERT**) trains on the Korean NLI·STS dataset so that the model can distinguish similarities between sentences or documents.
   
   - STEP 3) **Parallel Clustering** : This clustering method we designed focuses on speed and stability.
   
