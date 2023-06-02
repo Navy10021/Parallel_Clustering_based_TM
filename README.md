@@ -1,5 +1,5 @@
 # Parallel Clustering based Topic Modeling with KRNewsBERT
-#### 정부 및 국회 주관 "2022 과학기술 공공 AI 데이터 분석 활용 경진대회" AI 모델 개발 부문 1등 (최우수상) 수상작
+#### 정부 및 국회 주관 "2022 과학기술 AI / DATA 분석 경진대회" AI 모델 개발 부문 1등 (최우수상) 수상작
 
 ## 1. Project Background
   - Topic modeling is an unsupervised learning process that automatically extracts topics or issues from a document set by analyzing the patterns of words constituting text data.
