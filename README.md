@@ -44,9 +44,9 @@ To summarize the entire process of the **『Parallel Clustering based News artic
     
   - Experimental results demonstrate that our **parallel clustering** is faster and more coherent in text embeddings clustering than other famous clustering methods.
     
-![parallel_clustering](https://github.com/user-attachments/assets/9fcbb39e-c8d2-439d-8a68-e69f84c3fc5a)
+![parallel_clustering](https://github.com/user-attachments/assets/9a88b55c-27c8-4437-8ba9-c4fd1df8b3c6)
 
-![c-tf-idf](https://user-images.githubusercontent.com/105137667/195860749-3bb825e8-c16a-45db-a4fe-7b4b884d2ea6.jpg)
+   ![c-tf-idf](https://user-images.githubusercontent.com/105137667/195860749-3bb825e8-c16a-45db-a4fe-7b4b884d2ea6.jpg)
 
 ## 4. Topic Modeling results
 
